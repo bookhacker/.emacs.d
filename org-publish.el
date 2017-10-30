@@ -105,16 +105,17 @@
 	 :html-link-home "/"
 	 :html-preamble
 	 "<header id=\"banner\">
+<div class=\"wrapper\">
   <h1><a href=\"https://bookhacker.org\">bookhacker.org</a></h1>
-  <hr>
   <nav><ul>
     <li><a href=\"./datenschutz.html\">Datenschutz</a></li>
     <li><a href=\"./impressum.html\">Impressum</a></li>
   </ul></nav>
+</div>
 </header>"	 
 	 :html-postamble
-	 "<hr>
-	 <footer>
+	 "<footer>
+<div class=\"wrapper\">
 	 <h2 class=\"footer-heading\">bookhacker.org</h2>
 <div class=\"footer-left\">
 <ul class=\"contact-list\">
@@ -123,7 +124,8 @@
 </ul>
 </div>
 <div class=\"footer-right\">
-<p></p>
+<p>Kompjuta Tekknolodschie</p>
+</div>
 </div>
 </footer>"		 
 	 :html-head-include-default-style nil
