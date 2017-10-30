@@ -1,0 +1,2 @@
+# dotEmacs
+Emacs configuration.
