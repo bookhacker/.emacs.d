@@ -1,4 +1,5 @@
 ;; org-publish.el
+(require 'ox-html)
 (setq org-export-html-coding-system 'utf-8-unix)
 (setq org-html-viewport nil)
 
@@ -16,7 +17,7 @@
 (setf org-html-postamble nil)
 (setf org-html-scripts "")
 
-(require 'ox-publish)
+;;(require 'ox-publish)
 (setq org-publish-project-alist nil)
 
 (load "~/.emacs.d/org-websites/bookhacker.org.el")

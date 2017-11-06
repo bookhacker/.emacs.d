@@ -108,9 +108,9 @@ relative link in the sitemap-publish function"
 (setq org-publish-project-bookhacker
       '(("bookhacker" :components ("bookhacker-articles" "bookhacker-pages" "bookhacker-static"))
 	("bookhacker-articles"
- 	 :base-directory "~/org/bookhacker/org-files/blog/"
+ 	 :base-directory "~/org/websites/bookhacker.org/org-files/blog/"
 	 :base-extension "org"
-	 :publishing-directory "~/org/bookhacker/public_html/blog/"
+	 :publishing-directory "~/org/websites/bookhacker.org/public_html/blog/"
 	 :completion-function my-blog-articles-postprocessor
 	 :recursive t
 	 :publishing-function org-html-publish-to-html
@@ -148,13 +148,11 @@ relative link in the sitemap-publish function"
 </div>
 </footer>"
 	 :html-head nil ;; cleans up anything that would have been in there.
-	 ;;         :html-head-extra ,my-blog-extra-head
-	 :html-head-extra
-	 "<link rel=\"stylesheet\" href=\"css/stylesheet.css\" />"
+	 :html-head-extra "<link rel=\"stylesheet\" href=\"css/stylesheet.css\" />"
 	 :html-head-include-default-style nil
 	 :html-head-include-scripts nil
 	 :auto-preamble t
-	          ;; sitemap - list of blog articles
+	 ;; sitemap - list of blog articles
          :auto-sitemap t
 	 :sitemap-title "Kompjuta Tekknolodschie"
          :sitemap-filename "index.org"
@@ -163,9 +161,9 @@ relative link in the sitemap-publish function"
          :sitemap-sort-files anti-chronologically
          :sitemap-date-format "%d.%B.%Y")
 	("bookhacker-pages"
- 	 :base-directory "~/org/bookhacker/org-files/"
+ 	 :base-directory "~/org/websites/bookhacker.org/org-files/"
 	 :base-extension "org"
-	 :publishing-directory "~/org/bookhacker/public_html/"
+	 :publishing-directory "~/org/websites/bookhacker.org/public_html/"
 	 :recursive nil
 	 :publishing-function org-html-publish-to-html
 	 :with-author t
@@ -202,8 +200,8 @@ relative link in the sitemap-publish function"
 </div>
 </footer>")	
 	("bookhacker-static"
-	 :base-directory "~/org/bookhacker/org-files/"
+	 :base-directory "~/org/websites/bookhacker.org/org-files/"
 	 :base-extension "css\\|js\\|png\\|jpg\\|gif\\|pdf\\|mp3\\|ogg\\|swf"
-	 :publishing-directory "~/org/bookhacker/public_html/"
+	 :publishing-directory "~/org/websites/bookhacker.org/public_html/"
 	 :recursive t
 	 :publishing-function org-publish-attachment)))
