@@ -1,4 +1,4 @@
-# dotEmacs
+# .emacs.d
 Emacs configuration.
 
 ## Installation
