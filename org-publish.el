@@ -2,6 +2,7 @@
 (require 'ox-html)
 (setq org-export-html-coding-system 'utf-8-unix)
 (setq org-html-viewport nil)
+(setq org-export-with-sub-superscripts nil)
 
 ;; always rebuild all files
 (setq org-publish-use-timestamps-flag nil)
