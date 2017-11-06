@@ -155,7 +155,7 @@ relative link in the sitemap-publish function"
 	 ;; sitemap - list of blog articles
          :auto-sitemap t
 	 :sitemap-title "Kompjuta Tekknolodschie"
-         :sitemap-filename "index.org"
+	 :sitemap-filename "index.org"
          ;; custom sitemap generator function
          :sitemap-function my-blog-sitemap
          :sitemap-sort-files anti-chronologically
