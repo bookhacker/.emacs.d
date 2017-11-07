@@ -81,6 +81,9 @@
       ;; kill the first hrule to make this look OK
       (goto-char (point-min))
       (let ((kill-whole-line t)) (kill-line))
+      (goto-char (point-min))
+      (setq sitemap-title (plist-get project-plist :sitemap-title))
+      (insert (format "#+TITLE: %s\n\n" sitemap-title))
       (save-buffer))
     (or visiting (kill-buffer sitemap-buffer))))
 
