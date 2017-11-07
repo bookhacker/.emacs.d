@@ -162,7 +162,7 @@ relative link in the sitemap-publish function"
          ;; custom sitemap generator function
          :sitemap-function my-blog-sitemap
          :sitemap-sort-files anti-chronologically
-         :sitemap-date-format "%d.%B.%Y")
+         :sitemap-date-format "%d.%m.%Y")
 	("bookhacker-pages"
  	 :base-directory "~/org/websites/bookhacker.org/org-files/"
 	 :base-extension "org"
