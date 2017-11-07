@@ -16,6 +16,8 @@
       (buffer-substring beg end))))
 
 ;;; ---------------------------------------------------------
+;;; sitemap-title is missing
+;;; TODO: https://wpc.io/blog/posts/blogging-with-org-mode.html
 ;;;
 (defun my-blog-sitemap (project &optional sitemap-filename)
   "Generate the sitemap for my blog."
