@@ -112,7 +112,7 @@ relative link in the sitemap-publish function"
 ;;; ---------------------------------------------------------
 ;;; 
 (setq org-publish-project-bookhacker
-      '(("bookhacker" :components ("bookhacker-articles" "bookhacker-pages" "bookhacker-static"))
+      '(("bookhacker.org" :components ("bookhacker-articles" "bookhacker-pages" "bookhacker-static"))
 	("bookhacker-articles"
  	 :base-directory "~/org/websites/bookhacker.org/org-files/blog/"
 	 :base-extension "org"
