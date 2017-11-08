@@ -1,10 +1,10 @@
 (setq org-publish-project-achaia
       '(
-("achaia" :components ("achaia-pages" "achaia-static"))
+("achaia.org" :components ("achaia-pages" "achaia-static"))
 	("achaia-pages"
- 	 :base-directory "~/org/index-achaia/org-files/"
+ 	 :base-directory "~/org/websites/achaia.org/org-files/"
 	 :base-extension "org"
-	 :publishing-directory "~/org/index-achaia/public_html/"
+	 :publishing-directory "~/org/websites/achaia.org/public_html/"
 	 :recursive t
 	 :publishing-function org-html-publish-to-html
 	 :with-author t
@@ -17,7 +17,7 @@
 	 :html-preamble
 	 "<header id=\"banner\">
 <div class=\"wrapper\">
-  <h1><a href=\"http://achaia.org\">INDEX ACHAIA</a></h1>
+  <h1><a href=\"https://achaia.org\">INDEX ACHAIA</a></h1>
   <nav><ul>
     <li><a href=\"./datenschutz.html\">Datenschutz</a></li>
     <li><a href=\"./impressum.html\">Impressum</a></li>
@@ -44,8 +44,8 @@
 	 :html-head-include-scripts nil
 	 :auto-preamble t)
 	("achaia-static"
-	 :base-directory "~/org/index-achaia/org-files/"
+	 :base-directory "~/org/websites/achaia.org/org-files/"
 	 :base-extension "css\\|js\\|png\\|jpg\\|gif\\|pdf\\|mp3\\|ogg\\|swf"
-	 :publishing-directory "~/org/index-achaia/public_html/"
+	 :publishing-directory "~/org/websites/achaia.org/public_html/"
 	 :recursive t
 	 :publishing-function org-publish-attachment)))
