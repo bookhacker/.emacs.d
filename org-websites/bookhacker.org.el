@@ -49,8 +49,10 @@
           (unless (equal (file-truename sitemap-filename)
                          (file-truename file))
             (let (;; get the title and date of the current file
-                  (title (org-publish-format-file-entry "%t" file project-plist))
-                  (date (org-publish-format-file-entry "%d" file project-plist))
+		  (title (org-publish-format-file-entry "%t" file project-plist))
+		  (date (org-publish-format-file-entry "%d" file project-plist))
+		  ;; (date (org-publish-find-date file))
+		  ;; (date (plist-get env :date))
                   ;; get the preview section from the current file
                   (preview (my-blog-get-preview file))
                   (regexp "\\(.*\\)\\[\\([^][]+\\)\\]\\(.*\\)"))
@@ -73,7 +75,8 @@
                 (org-set-property "RSS_PERMALINK" rss-permalink)
                 (org-set-property "PUBDATE" rss-pubdate))
               ;; insert the date, preview, & read more link
-              (insert (concat date "\n\n"))
+              ;; (insert (concat date "\n\n"))
+	      (insert (concat "#+HTML: <div class=\"post-date\">\nVeröffentlicht: " date "\n#+HTML: </div>\n\n"))
               (insert preview)
               (insert (concat "[[file:" link "][Weiterlesen...]]\n"))))))
       ;; kill the first hrule to make this look OK
