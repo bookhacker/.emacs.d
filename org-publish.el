@@ -21,8 +21,10 @@
 ;;(require 'ox-publish)
 (setq org-publish-project-alist nil)
 
+(load "~/.emacs.d/org-websites/achaia.org.el")
 (load "~/.emacs.d/org-websites/bookhacker.org.el")
 
 (setq org-publish-project-alist
       (append org-publish-project-alist
+	      org-publish-project-achaia
 	      org-publish-project-bookhacker))
