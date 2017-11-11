@@ -148,6 +148,9 @@ relative link in the sitemap-publish function"
 <li><a href=\"mailto:kontakt@bookhacker.org\">kontakt@bookhacker.org</a></li>
 </ul>
 </div>
+<div class=\"footer-center\">
+<p>Center</p>
+</div>
 <div class=\"footer-right\">
 <p>Kompjuta Tekknolodschie</p>
 </div>
