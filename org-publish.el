@@ -22,7 +22,7 @@
 (setq org-publish-project-alist nil)
 
 (load "~/.emacs.d/org-websites/achaia.org.el")
-(load "~/.emacs.d/org-websites/bookhacker.org.el")
+(load "~/org/websites/bookhacker.org/bookhacker.org.el")
 (load "~/org/websites/gorgoneion-press.de/gorgoneion-press.de.el")
 
 (setq org-publish-project-alist
